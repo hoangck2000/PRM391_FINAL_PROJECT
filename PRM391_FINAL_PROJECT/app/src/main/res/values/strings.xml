@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PRM_Final_Project</string>
+    <string name="todo">TODO</string>
+    <string name="let_go">Let Go!</string>
 </resources>
