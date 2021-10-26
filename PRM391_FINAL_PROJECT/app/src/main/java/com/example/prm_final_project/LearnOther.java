@@ -59,6 +59,6 @@ public class LearnOther extends AppCompatActivity {
         click3.setOnClickListener(elem);
         click4.setOnClickListener(elem);
         click5.setOnClickListener(elem);
-        click6.setOnClickListener(eGilem);
+        click6.setOnClickListener(elem);
     }
 }
