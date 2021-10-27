@@ -18,11 +18,8 @@
         <include
             android:id="@+id/include"
             layout="@layout/view_display"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -34,15 +31,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageButton
             android:id="@+id/button7"
             android:layout_width="38dp"
             android:layout_height="46dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:background="@drawable/eraser"
             android:onClick="eraserClick"
             app:cornerRadius="100dp"
@@ -57,8 +53,8 @@
             android:id="@+id/button8"
             android:layout_width="38dp"
             android:layout_height="46dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:background="@drawable/trash"
             android:onClick="deleteAllClick"
             app:cornerRadius="100dp"
@@ -73,7 +69,7 @@
             android:layout_width="38dp"
             android:layout_height="46dp"
             android:layout_marginStart="6dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="5dp"
             android:background="@drawable/pencil"
             android:onClick="pencilClick"
             app:cornerRadius="100dp"
@@ -102,8 +98,8 @@
             android:id="@+id/button3"
             android:layout_width="41dp"
             android:layout_height="53dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:backgroundTint="#ff00ff"
             android:onClick="magentaColorPicked"
             app:cornerRadius="100dp"
@@ -116,8 +112,8 @@
             android:id="@+id/button4"
             android:layout_width="41dp"
             android:layout_height="53dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:backgroundTint="#0000ff"
             android:onClick="blueColorPicked"
             app:cornerRadius="100dp"
@@ -130,7 +126,7 @@
             android:id="@+id/button5"
             android:layout_width="41dp"
             android:layout_height="53dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="5dp"
             android:layout_marginEnd="6dp"
             android:backgroundTint="#ff0000"
             android:onClick="redColorPicked"
@@ -144,8 +140,8 @@
             android:id="@+id/button9"
             android:layout_width="41dp"
             android:layout_height="53dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:backgroundTint="#f1c40f"
             android:onClick="yellowColorPicked"
             app:cornerRadius="100dp"
