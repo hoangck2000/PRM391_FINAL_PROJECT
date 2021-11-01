@@ -8,7 +8,7 @@ import android.os.Handler;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-    private static int SPLASH_TIME_OUT = 1500;
+    private static int SPLASH_TIME_OUT = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,8 +20,11 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 Intent intent = new Intent(MainActivity.this, FreeDrawActivity.class);
                 startActivity(intent);
-                finish();
             }
         }, SPLASH_TIME_OUT);
+    }
+
+    public void backEnterName(View view) {
+        finish();
     }
 }

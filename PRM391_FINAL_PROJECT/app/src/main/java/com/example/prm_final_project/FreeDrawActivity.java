@@ -69,4 +69,7 @@ public static Paint paint_brush = new Paint();
     }
 
 
+    public void backHome(View view) {
+        finish();
+    }
 }
