@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PRM_Final_Project">
         <activity
+            android:name=".FreeDrawActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
