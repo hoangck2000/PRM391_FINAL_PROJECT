@@ -8,7 +8,7 @@ import android.os.Handler;
 import android.view.View;
 
 public class EnterNameScreen extends AppCompatActivity {
-    private static int SPLASH_TIME_OUT = 1500;
+    private static int SPLASH_TIME_OUT = 1000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +21,6 @@ public class EnterNameScreen extends AppCompatActivity {
             public void run() {
                 Intent intent = new Intent(EnterNameScreen.this, MainActivity.class);
                 startActivity(intent);
-                finish();
             }
         }, SPLASH_TIME_OUT);
     }
