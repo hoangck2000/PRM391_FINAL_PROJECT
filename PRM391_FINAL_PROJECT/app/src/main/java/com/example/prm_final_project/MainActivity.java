@@ -27,4 +27,9 @@ public class MainActivity extends AppCompatActivity {
     public void backEnterName(View view) {
         finish();
     }
+
+    public void toLearnRead(View view) {
+        Intent intent = new Intent(MainActivity.this,FirstLearnScreen.class);
+        startActivity(intent);
+    }
 }
