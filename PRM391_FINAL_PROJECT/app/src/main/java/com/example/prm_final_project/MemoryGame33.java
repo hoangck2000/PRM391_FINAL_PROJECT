@@ -25,7 +25,7 @@ public class MemoryGame33 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.game3x3);
+        setContentView(R.layout.activity_memory_game_1);
         iv_1 = (ImageView) findViewById(R.id.iv_1);
         iv_2 = (ImageView) findViewById(R.id.iv_2);
         iv_3 = (ImageView) findViewById(R.id.iv_3);

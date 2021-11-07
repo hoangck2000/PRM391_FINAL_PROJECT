@@ -32,4 +32,13 @@ public class MemoryGameMenu extends AppCompatActivity {
             }
         }, SPLASH_TIME_OUT);
     }
+    /*public void backToHome(View view) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MemoryGameMenu.this, .class);
+                startActivity(intent);
+            }
+        }, SPLASH_TIME_OUT);
+    }*/
 }

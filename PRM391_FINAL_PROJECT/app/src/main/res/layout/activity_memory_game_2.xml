@@ -6,8 +6,8 @@
 
     <include
         layout="@layout/game4x4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="118dp" />
+        android:layout_width="409dp"
+        android:layout_height="605dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="30dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
