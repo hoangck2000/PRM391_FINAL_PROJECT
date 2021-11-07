@@ -9,15 +9,14 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="146dp"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="223dp"
+        android:layout_marginTop="52dp"
         android:backgroundTint="@color/white"
         android:onClick="goToFreeDraw"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/painting" />
@@ -31,4 +30,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="147dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="37dp"
+        android:onClick="toLearnRead"
+        android:src="@drawable/learn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PRM_Final_Project">
         <activity
+            android:name=".FirstLearnScreen"
+            android:exported="true" />
+        <activity
+            android:name=".LearnOther"
+            android:exported="true" />
+        <activity
+            android:name=".LearnColor"
+            android:exported="true" />
+        <activity
             android:name=".FreeDrawActivity"
             android:exported="true" />
         <activity
