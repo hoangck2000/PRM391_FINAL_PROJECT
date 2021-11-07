@@ -10,7 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PRM_Final_Project">
         <activity
+            android:name=".FirstLearnScreen"
+            android:exported="true" />
+        <activity
+            android:name=".LearnOther"
+            android:exported="true" />
+        <activity
+            android:name=".LearnColor"
+            android:exported="true" />
+        <activity
+            android:name=".FreeDrawActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EnterNameScreen"
+            android:exported="true" />
+        <activity
+            android:name=".WelcomeScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +36,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
