@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:weightSum="3"
+        android:weightSum="4"
         android:layout_weight="1"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
@@ -39,17 +39,6 @@
             android:layout_height="100dp"
             android:scaleType="centerInside"
             android:src="@drawable/question"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:weightSum="3"
-        android:layout_weight="1"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
-
         <ImageView
             android:id="@+id/iv_4"
             android:layout_weight="1"
@@ -57,6 +46,17 @@
             android:layout_height="100dp"
             android:scaleType="centerInside"
             android:src="@drawable/question"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <ImageView
             android:id="@+id/iv_5"
@@ -73,15 +73,6 @@
             android:layout_height="100dp"
             android:scaleType="centerInside"
             android:src="@drawable/question"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:weightSum="3"
-        android:layout_weight="1"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
 
         <ImageView
             android:id="@+id/iv_7"
@@ -90,18 +81,8 @@
             android:layout_height="100dp"
             android:scaleType="centerInside"
             android:src="@drawable/question"/>
-
         <ImageView
             android:id="@+id/iv_8"
-            android:layout_weight="1"
-
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/question"/>
-
-        <ImageView
-            android:id="@+id/iv_9"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="100dp"
@@ -112,18 +93,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:weightSum="3"
+        android:weightSum="4"
         android:layout_weight="1"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
         <ImageView
-            android:id="@+id/iv_10"
+            android:id="@+id/iv_9"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:scaleType="centerInside"
             android:src="@drawable/question"/>
+
+        <ImageView
+            android:id="@+id/iv_10"
+            android:layout_weight="1"
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/question"/>
+
         <ImageView
             android:id="@+id/iv_11"
             android:layout_weight="1"
@@ -133,6 +124,44 @@
             android:src="@drawable/question"/>
         <ImageView
             android:id="@+id/iv_12"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/question"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/iv_13"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/question"/>
+        <ImageView
+            android:id="@+id/iv_14"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/question"/>
+        <ImageView
+            android:id="@+id/iv_15"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/question"/>
+        <ImageView
+            android:id="@+id/iv_16"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="100dp"
