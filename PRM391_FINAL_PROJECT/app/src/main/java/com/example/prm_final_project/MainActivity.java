@@ -32,4 +32,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this,FirstLearnScreen.class);
         startActivity(intent);
     }
+    public void goToMemoryGame(View view) {
+        Intent intent = new Intent(MainActivity.this, MemoryGameMenu.class);
+        startActivity(intent);
+    }
 }

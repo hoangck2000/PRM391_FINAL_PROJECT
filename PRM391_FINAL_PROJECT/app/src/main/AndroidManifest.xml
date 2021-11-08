@@ -28,6 +28,15 @@
             android:name=".EnterNameScreen"
             android:exported="true" />
         <activity
+            android:name=".MemoryGame33"
+            android:exported="true" />
+        <activity
+            android:name=".MemoryGame44"
+            android:exported="true" />
+        <activity
+            android:name=".MemoryGameMenu"
+            android:exported="true" />
+        <activity
             android:name=".WelcomeScreen"
             android:exported="true">
             <intent-filter>
