@@ -6,26 +6,32 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 
 public class MemoryGame33 extends AppCompatActivity {
     ImageView iv_1,iv_2,iv_3,iv_4,iv_5,iv_6,iv_7,iv_8,iv_9,iv_10,iv_11,iv_12;
-
+    TextView txtMove;
+    //array for image
     Integer[] cardsArray ={101,102,103,104,105,106,201,202,203,204,205,206};
+    //actual image
     int image101,image102,image103,image104,image105,image106,image201,image202,image203,image204,image205,image206;
     int clickFirst, clickSecond;
     int firstCard,secondCard;
     int cardNumber=1;
+    int move =13;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_memory_game_1);
+        txtMove = (TextView) findViewById(R.id.txtMove);
+        txtMove.setText(String.valueOf(move));
+
         iv_1 = (ImageView) findViewById(R.id.iv_1);
         iv_2 = (ImageView) findViewById(R.id.iv_2);
         iv_3 = (ImageView) findViewById(R.id.iv_3);
@@ -52,7 +58,7 @@ public class MemoryGame33 extends AppCompatActivity {
         iv_11.setTag("10");
         iv_12.setTag("11");
 
-        Collections.shuffle(Arrays.asList(cardsArray));
+
 
         iv_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -139,9 +145,15 @@ public class MemoryGame33 extends AppCompatActivity {
             }
         });
 
+        //load the card images
         loadImages();
+
+        //shuffle the images
+        Collections.shuffle(Arrays.asList(cardsArray));
     }
     private  void doStuff(ImageView iv,int card){
+        //set correct image to the imageView
+
         if(cardsArray[card] == 101){
             iv.setImageResource(image101);
         }else if(cardsArray[card] == 102){
@@ -168,6 +180,7 @@ public class MemoryGame33 extends AppCompatActivity {
             iv.setImageResource(image206);
         }
 
+        //check which image is selected and save it to temporary variable
         if(cardNumber == 1 ){
             firstCard = cardsArray[card];
             if(firstCard >200){
@@ -201,12 +214,20 @@ public class MemoryGame33 extends AppCompatActivity {
             handler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                        calculate();
+                    //check if the selected images are equal
+                    calculate();
                 }
             },1000);
         }
     }
     private void calculate(){
+        //checkMove
+        move--;
+        if(move == 0){
+            checkMove();
+        }
+        txtMove.setText(String.valueOf(move));
+        //if image are equal remove them
         if(firstCard == secondCard){
             if(clickFirst == 0){
                 iv_1.setVisibility(View.INVISIBLE);
@@ -287,7 +308,31 @@ public class MemoryGame33 extends AppCompatActivity {
         iv_11.setEnabled(true);
         iv_12.setEnabled(true);
 
+
+        //check if the game is over
         checkEnd();
+    }
+    private void checkMove(){
+        AlertDialog.Builder alert = new AlertDialog.Builder(MemoryGame33.this);
+        alert.setMessage("Out of Moves!!").setCancelable(false)
+                .setPositiveButton("NewGame", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent = new Intent(getApplicationContext(), MemoryGame33.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                })
+                .setNegativeButton("Exit", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent = new Intent(getApplicationContext(), MemoryGameMenu.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+        AlertDialog alertDialog = alert.create();
+        alertDialog.show();
     }
     private void checkEnd(){
         if(iv_1.getVisibility() == View.INVISIBLE &&

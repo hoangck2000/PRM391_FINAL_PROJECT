@@ -16,6 +16,23 @@
         <entry key="..\:/Chuyen nganh/FPT University/Course 7/PRM391/PRM391_FINAL/PRM391_FINAL_PROJECT/app/src/main/res/layout/view_display.xml" value="0.2515625" />
         <entry key="..\:/Chuyen nganh/FPT University/Course 7/PRM391/PRM391_FINAL/PRM391_FINAL_PROJECT/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
         <entry key="..\:/Chuyen nganh/FPT University/Course 7/PRM391/PRM391_FINAL/PRM391_FINAL_PROJECT/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3828125" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <entry key="..\:/Users/Admin/Desktop/PRM391_Final_Project/New folder/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/drawable/ic_ball.xml" value="0.3828125" />
+        <entry key="..\:/Users/Admin/Desktop/PRM391_Final_Project/New folder/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/drawable/ic_ball2.xml" value="0.3828125" />
+        <entry key="..\:/Users/Admin/Desktop/PRM391_Final_Project/New folder/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/drawable/ic_car.xml" value="0.3828125" />
+        <entry key="..\:/Users/Admin/Desktop/PRM391_Final_Project/New folder/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/drawable/ic_clock.xml" value="0.3828125" />
+        <entry key="..\:/Users/Admin/Desktop/PRM391_Final_Project/New folder/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/drawable/ic_pen.xml" value="0.3828125" />
+        <entry key="..\:/Users/Admin/Desktop/PRM391_Final_Project/New folder/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/layout/activity_main.xml" value="0.28940217391304346" />
+        <entry key="..\:/Users/Admin/Desktop/PRM391_Final_Project/New folder/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/layout/activity_memory_game_1.xml" value="0.28940217391304346" />
+        <entry key="..\:/Users/Admin/Desktop/PRM391_Final_Project/New folder/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/layout/activity_memory_game_2.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/Desktop/PRM391_Final_Project/New folder/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/layout/activity_memory_game_menu.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/Desktop/PRM391_Final_Project/New folder/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/layout/activity_welcome_screen.xml" value="0.7881462799495587" />
+        <entry key="..\:/Users/Admin/Desktop/PRM391_Final_Project/New folder/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/layout/game3x3.xml" value="0.28940217391304346" />
+        <entry key="..\:/Users/Admin/Desktop/PRM391_Final_Project/New folder/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/layout/game4x4.xml" value="0.36666666666666664" />
+=======
+>>>>>>> 2ea028dda7e4015f9c8ed13baad25f38344b0940
+=======
         <entry key="..\:/Project Ky 7/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/layout/activity_free_draw.xml" value="0.22708333333333333" />
         <entry key="..\:/Project Ky 7/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Project Ky 7/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/layout/activity_quiz_content_flower.xml" value="0.22327898550724637" />
@@ -23,6 +40,7 @@
         <entry key="..\:/Project Ky 7/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/layout/activity_quiz_home2.xml" value="0.125" />
         <entry key="..\:/Project Ky 7/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/layout/activity_quiz_home3.xml" value="0.1484375" />
         <entry key="..\:/Project Ky 7/PRM391_FINAL_PROJECT/PRM391_FINAL_PROJECT/app/src/main/res/layout/quiz_home.xml" value="0.22735507246376813" />
+>>>>>>> 024afca36b2674395acf4d92266c3a939365f5ff
       </map>
     </option>
   </component>
@@ -32,5 +50,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
   </component>
 </project>
