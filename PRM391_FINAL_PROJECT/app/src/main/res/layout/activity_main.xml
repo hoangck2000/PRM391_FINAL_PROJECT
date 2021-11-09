@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundmainactivity"
+    android:onClick="goToQuizApp"
     tools:context=".MainActivity">
 
     <ImageButton
@@ -13,13 +14,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
         android:layout_marginTop="56dp"
-        android:layout_marginEnd="223dp"
         android:onClick="goToFreeDraw"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/painting" />
+        app:srcCompat="@drawable/painting"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -28,5 +27,7 @@
         android:onClick="backEnterName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/homeAsUpIndicator" />
+        app:srcCompat="?attr/homeAsUpIndicator"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
