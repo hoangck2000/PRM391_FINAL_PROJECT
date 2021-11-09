@@ -13,6 +13,15 @@
             android:name=".QuizContent_Flower"
             android:exported="true" />
         <activity
+            android:name=".FirstLearnScreen"
+            android:exported="true" />
+        <activity
+            android:name=".LearnOther"
+            android:exported="true" />
+        <activity
+            android:name=".LearnColor"
+            android:exported="true" />
+        <activity
             android:name=".FreeDrawActivity"
             android:exported="true" />
         <activity
@@ -23,6 +32,15 @@
             android:exported="true" />
         <activity
             android:name=".QuizHome"
+            android:exported="true" />
+        <activity
+            android:name=".MemoryGame33"
+            android:exported="true" />
+        <activity
+            android:name=".MemoryGame44"
+            android:exported="true" />
+        <activity
+            android:name=".MemoryGameMenu"
             android:exported="true" />
         <activity
             android:name=".WelcomeScreen"

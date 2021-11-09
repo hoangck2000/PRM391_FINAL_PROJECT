@@ -39,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
         finish();
     }
 
-
-
+    public void toLearnRead(View view) {
+        Intent intent = new Intent(MainActivity.this,FirstLearnScreen.class);
+        startActivity(intent);
+    }
+    public void goToMemoryGame(View view) {
+        Intent intent = new Intent(MainActivity.this, MemoryGameMenu.class);
+        startActivity(intent);
+    }
 }
