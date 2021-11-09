@@ -2,19 +2,20 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="goToQuizApp"
-    android:background="@drawable/backgroundmainactivity"
+    android:background="@drawable/backgoundlistapp"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
+        android:layout_marginStart="62dp"
         android:layout_marginTop="2dp"
         android:text="Memory Game"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton" />
@@ -23,23 +24,22 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="75dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="65dp"
         android:text="Learn Words"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
 
     <ImageButton
         android:id="@+id/imageButton6"
-        android:layout_width="150dp"
-        android:layout_height="146dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="127dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
         android:backgroundTint="@color/white"
         android:onClick="goToFreeDraw"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/painting"
@@ -47,21 +47,21 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="150dp"
-        android:layout_height="146dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="125dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="@color/white"
         android:onClick="goToMemoryGame"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton6"
-        app:srcCompat="@drawable/brain" />
+        app:srcCompat="@drawable/brain"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#F44336"
         android:onClick="backEnterName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -71,26 +71,62 @@
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="147dp"
-        android:layout_height="137dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="40dp"
+        android:layout_width="120dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="53dp"
         android:onClick="toLearnRead"
         android:src="@drawable/learn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btnQuizApp"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginEnd="125dp"
+        android:layout_marginStart="77dp"
         android:text="Free Draw"
+        android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
-        app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+
+    <ImageButton
+        android:id="@+id/btnQuizApp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="goToQuizApp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoquizz"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="62dp"
+        android:text="Funny Quizzes"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnQuizApp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Happy Kids"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
