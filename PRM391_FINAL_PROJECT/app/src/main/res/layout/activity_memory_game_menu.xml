@@ -4,25 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundmainactivity">
+    android:background="@drawable/backgroundmemory">
 
     <Button
 
         android:id="@+id/button"
-        android:layout_width="110dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="158dp"
-        android:layout_marginEnd="158dp"
+        android:layout_width="96dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="?android:attr/colorMultiSelectHighlight"
         android:backgroundTintMode="src_atop"
         android:onClick="backHome"
         android:text="back"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11"
-        app:layout_constraintVertical_bias="0.292" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
 
@@ -30,14 +28,16 @@
         android:layout_width="110dp"
         android:layout_height="56dp"
         android:layout_marginStart="158dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="158dp"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
         android:backgroundTintMode="src_atop"
         android:onClick="goTo3x3"
-        android:text="3x3"
+        android:text="EASY"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -49,28 +49,29 @@
         android:layout_marginStart="158dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="158dp"
+        android:backgroundTint="?android:attr/colorPressedHighlight"
         android:backgroundTintMode="src_atop"
         android:onClick="goTo4x4"
-        android:text="4x4"
+        android:text="Hard"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button10"
-        app:layout_constraintVertical_bias="0.063" />
+        app:layout_constraintVertical_bias="0.009" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:fontFamily="sans-serif-medium"
+        android:layout_width="379dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/spicychicken"
         android:text="Memory Game"
-        android:textColor="@color/purple_700"
-        android:textSize="48sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="100sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

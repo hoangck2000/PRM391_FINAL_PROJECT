@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,17 +15,21 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class MemoryGame44 extends AppCompatActivity {
-    ImageView iv_1,iv_2,iv_3,iv_4,iv_5,iv_6,iv_7,iv_8,iv_9,iv_10,iv_11,iv_12,iv_13,iv_14,iv_15,iv_16;
-
-    Integer[] cardsArray ={101,102,103,104,105,106,107,108,201,202,203,204,205,206,207,208};
-    int image101,image102,image103,image104,image105,image106,image107,image108,image201,image202,image203,image204,image205,image206,image207,image208;
+    ImageView iv_1,iv_2,iv_3,iv_4,iv_5,iv_6,iv_7,iv_8,iv_9,iv_10,iv_11,iv_12,iv_13,iv_14,iv_15,iv_16,iv_17,iv_18,iv_19,iv_20;
+    TextView txtMove;
+    Integer[] cardsArray ={100,101,102,103,104,105,106,107,108,109,200,201,202,203,204,205,206,207,208,209};
+    int image100,image101,image102,image103,image104,image105,image106,image107,image108,image109,image201,image202,image203,image204,image205,image206,image207,image208,image209,image200;
     int clickFirst, clickSecond;
     int firstCard,secondCard;
     int cardNumber=1;
+    int move =30;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_memory_game_2);
+        txtMove = (TextView) findViewById(R.id.txtMove);
+        txtMove.setText(String.valueOf(move));
+
         iv_1 = (ImageView) findViewById(R.id.iv_1);
         iv_2 = (ImageView) findViewById(R.id.iv_2);
         iv_3 = (ImageView) findViewById(R.id.iv_3);
@@ -41,6 +46,10 @@ public class MemoryGame44 extends AppCompatActivity {
         iv_14= (ImageView) findViewById(R.id.iv_14);
         iv_15= (ImageView) findViewById(R.id.iv_15);
         iv_16= (ImageView) findViewById(R.id.iv_16);
+        iv_17= (ImageView) findViewById(R.id.iv_17);
+        iv_18= (ImageView) findViewById(R.id.iv_18);
+        iv_19= (ImageView) findViewById(R.id.iv_19);
+        iv_20= (ImageView) findViewById(R.id.iv_20);
 
         iv_1.setTag("0");
         iv_2.setTag("1");
@@ -58,6 +67,11 @@ public class MemoryGame44 extends AppCompatActivity {
         iv_14.setTag("13");
         iv_15.setTag("14");
         iv_16.setTag("15");
+        iv_17.setTag("16");
+        iv_18.setTag("17");
+        iv_19.setTag("18");
+        iv_20.setTag("19");
+
 
         Collections.shuffle(Arrays.asList(cardsArray));
 
@@ -173,6 +187,34 @@ public class MemoryGame44 extends AppCompatActivity {
                 doStuff(iv_16,theCard);
             }
         });
+        iv_17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int theCard = Integer.parseInt((String) view.getTag());
+                doStuff(iv_17,theCard);
+            }
+        });
+        iv_18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int theCard = Integer.parseInt((String) view.getTag());
+                doStuff(iv_18,theCard);
+            }
+        });
+        iv_19.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int theCard = Integer.parseInt((String) view.getTag());
+                doStuff(iv_19,theCard);
+            }
+        });
+        iv_20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int theCard = Integer.parseInt((String) view.getTag());
+                doStuff(iv_20,theCard);
+            }
+        });
 
         loadImages();
     }
@@ -181,6 +223,8 @@ public class MemoryGame44 extends AppCompatActivity {
             iv.setImageResource(image101);
         }else if(cardsArray[card] == 102){
             iv.setImageResource(image102);
+        }else if(cardsArray[card] == 100){
+            iv.setImageResource(image100);
         }else if(cardsArray[card] == 103){
             iv.setImageResource(image103);
         }else if(cardsArray[card] == 104){
@@ -193,6 +237,10 @@ public class MemoryGame44 extends AppCompatActivity {
             iv.setImageResource(image107);
         }else if(cardsArray[card] == 108){
             iv.setImageResource(image108);
+        }else if(cardsArray[card] == 109){
+            iv.setImageResource(image109);
+        }else if(cardsArray[card] == 200){
+            iv.setImageResource(image200);
         }else if(cardsArray[card] == 201){
             iv.setImageResource(image201);
         }else if(cardsArray[card] == 202){
@@ -209,6 +257,8 @@ public class MemoryGame44 extends AppCompatActivity {
             iv.setImageResource(image207);
         }else if(cardsArray[card] == 208){
             iv.setImageResource(image208);
+        }else if(cardsArray[card] == 209){
+            iv.setImageResource(image209);
         }
 
         if(cardNumber == 1 ){
@@ -243,6 +293,10 @@ public class MemoryGame44 extends AppCompatActivity {
             iv_14.setEnabled(false);
             iv_15.setEnabled(false);
             iv_16.setEnabled(false);
+            iv_17.setEnabled(false);
+            iv_18.setEnabled(false);
+            iv_19.setEnabled(false);
+            iv_20.setEnabled(false);
 
             Handler handler =new Handler();
             handler.postDelayed(new Runnable() {
@@ -254,6 +308,12 @@ public class MemoryGame44 extends AppCompatActivity {
         }
     }
     private void calculate(){
+        move--;
+        if(move == 0){
+            checkMove();
+        }
+        txtMove.setText(String.valueOf(move));
+
         if(firstCard == secondCard){
             if(clickFirst == 0){
                 iv_1.setVisibility(View.INVISIBLE);
@@ -287,6 +347,14 @@ public class MemoryGame44 extends AppCompatActivity {
                 iv_15.setVisibility(View.INVISIBLE);
             }else if(clickFirst == 15){
                 iv_16.setVisibility(View.INVISIBLE);
+            }else if(clickFirst == 16){
+                iv_17.setVisibility(View.INVISIBLE);
+            }else if(clickFirst == 17){
+                iv_18.setVisibility(View.INVISIBLE);
+            }else if(clickFirst == 18){
+                iv_19.setVisibility(View.INVISIBLE);
+            }else if(clickFirst == 19){
+                iv_20.setVisibility(View.INVISIBLE);
             }
 
             if(clickSecond == 0){
@@ -321,6 +389,14 @@ public class MemoryGame44 extends AppCompatActivity {
                 iv_15.setVisibility(View.INVISIBLE);
             }else if(clickSecond == 15){
                 iv_16.setVisibility(View.INVISIBLE);
+            }else if(clickSecond == 16){
+                iv_17.setVisibility(View.INVISIBLE);
+            }else if(clickSecond == 17){
+                iv_18.setVisibility(View.INVISIBLE);
+            }else if(clickSecond == 18){
+                iv_19.setVisibility(View.INVISIBLE);
+            }else if(clickSecond == 19){
+                iv_20.setVisibility(View.INVISIBLE);
             }
         }else{
             iv_1.setImageResource(R.drawable.question);
@@ -339,6 +415,10 @@ public class MemoryGame44 extends AppCompatActivity {
             iv_14.setImageResource(R.drawable.question);
             iv_15.setImageResource(R.drawable.question);
             iv_16.setImageResource(R.drawable.question);
+            iv_17.setImageResource(R.drawable.question);
+            iv_18.setImageResource(R.drawable.question);
+            iv_19.setImageResource(R.drawable.question);
+            iv_20.setImageResource(R.drawable.question);
 
         }
         iv_1.setEnabled(true);
@@ -357,8 +437,34 @@ public class MemoryGame44 extends AppCompatActivity {
         iv_14.setEnabled(true);
         iv_15.setEnabled(true);
         iv_16.setEnabled(true);
+        iv_17.setEnabled(true);
+        iv_18.setEnabled(true);
+        iv_19.setEnabled(true);
+        iv_20.setEnabled(true);
 
         checkEnd();
+    }
+    private void checkMove(){
+        AlertDialog.Builder alert = new AlertDialog.Builder(MemoryGame44.this);
+        alert.setMessage("Out of Moves!!").setCancelable(false)
+                .setPositiveButton("NewGame", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent = new Intent(getApplicationContext(), MemoryGame44.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                })
+                .setNegativeButton("Exit", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent = new Intent(getApplicationContext(), MemoryGameMenu.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+        AlertDialog alertDialog = alert.create();
+        alertDialog.show();
     }
 
     private void checkEnd(){
@@ -377,7 +483,11 @@ public class MemoryGame44 extends AppCompatActivity {
                 iv_13.getVisibility() == View.INVISIBLE&&
                 iv_14.getVisibility() == View.INVISIBLE&&
                 iv_15.getVisibility() == View.INVISIBLE&&
-                iv_16.getVisibility() == View.INVISIBLE){
+                iv_16.getVisibility() == View.INVISIBLE&&
+                iv_17.getVisibility() == View.INVISIBLE&&
+                iv_18.getVisibility() == View.INVISIBLE&&
+                iv_19.getVisibility() == View.INVISIBLE&&
+                iv_20.getVisibility() == View.INVISIBLE){
             AlertDialog.Builder alert = new AlertDialog.Builder(MemoryGame44.this);
             alert.setMessage("Game Over!!").setCancelable(false)
                     .setPositiveButton("NewGame", new DialogInterface.OnClickListener() {
@@ -410,6 +520,8 @@ public class MemoryGame44 extends AppCompatActivity {
         image106 = R.drawable.ic_cut;
         image107 = R.drawable.ic_bike;
         image108 = R.drawable.ic_motor;
+        image100 = R.drawable.ic_clock;
+        image109 = R.drawable.ic_pen;
         image201 = R.drawable.ic_ball;
         image202 = R.drawable.ic_car;
         image203 = R.drawable.ic_plane;
@@ -418,5 +530,8 @@ public class MemoryGame44 extends AppCompatActivity {
         image206 = R.drawable.ic_cut;
         image207 = R.drawable.ic_bike;
         image208 = R.drawable.ic_motor;
+        image200 = R.drawable.ic_clock;
+        image209 = R.drawable.ic_pen;
+
     }
 }
