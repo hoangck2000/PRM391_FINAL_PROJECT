@@ -56,7 +56,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageButton13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton9"
-        app:srcCompat="@drawable/fish" />
+        app:srcCompat="@drawable/lastfish" />
 
     <ImageButton
         android:id="@+id/imageButton12"
@@ -82,5 +82,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton11"
-        app:srcCompat="@drawable/lp" />
+        app:srcCompat="@drawable/hmm" />
 </androidx.constraintlayout.widget.ConstraintLayout>
