@@ -47,7 +47,7 @@ public class SwipeListener implements GestureDetector.OnGestureListener {
             if(v > 0){
                 callback.onSwipe(SwipeCallback.Direction.RIGHT);
             }else{
-                callback.onSwipe(SwipeCallback.Direction.UP);
+                callback.onSwipe(SwipeCallback.Direction.LEFT);
             }
         }else{
             if(v1 > 0){
