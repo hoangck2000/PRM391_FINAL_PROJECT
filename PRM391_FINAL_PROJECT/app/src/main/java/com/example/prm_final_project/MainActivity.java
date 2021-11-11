@@ -47,4 +47,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, MemoryGameMenu.class);
         startActivity(intent);
     }
+    public void goTo2048Game(View view) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MainActivity.this, com.example.prm_final_project.Game2048.g2048_Activity.class);
+                startActivity(intent);
+            }
+        }, SPLASH_TIME_OUT);
+    }
 }

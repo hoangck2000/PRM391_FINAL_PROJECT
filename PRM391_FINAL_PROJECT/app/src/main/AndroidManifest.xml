@@ -43,6 +43,9 @@
             android:name=".MemoryGameMenu"
             android:exported="true" />
         <activity
+            android:name=".Game2048.g2048_Activity"
+            android:exported="true" />
+        <activity
             android:name=".WelcomeScreen"
             android:exported="true" >
             <intent-filter>
